@@ -83,9 +83,11 @@ export default {
             this.normalizeOffset()
         },
         normalizeOffset() {
-            if (this.offset > Math.ceil(this.binary.length / 16) - this.rows)
-                this.offset = Math.ceil(this.binary.length / 16) - this.rows
+            if (this.offset > this.binary.length - (this.rows * 8))
+                this.offset = this.binary.length - (this.rows * 8)
+            this.offset -= this.offset % 16;
             if (this.offset < 0) this.offset = 0
+
         },
         setFocus(v: number) {
             this.$emit('update:focus', v)
