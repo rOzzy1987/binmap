@@ -1,6 +1,6 @@
 # BINMAP
 
-Binary file visualizer demo available at (Netlify)[https://binmap.netlify.app]
+Binary file visualizer demo available at [Netlify](https://binmap.netlify.app)
 
 ## Project Setup
 
