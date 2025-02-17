@@ -1,0 +1,18 @@
+:root {
+  --binmap-accent: #0a6;
+  --binmap-accent-rgb: 0, 170, 102;
+  --binmap-accent-h: 156deg;
+  --binmap-accent-s: 100%;
+  --binmap-accent-l: 33%;
+  --binmap-accent-hsl: hsl(var(--binmap-accent-h), var(--binmap-accent-s), var(--binmap-accent-l));
+
+  --binmap-accent-light: #6ca;
+  --binmap-accent-dark: #075;
+
+  /* ------------------------------------------- */
+
+  --bulma-primary-rgb: var(--binmap-accent-rgb) !important;
+  --bulma-primary-h: var(--binmap-accent-h) !important;
+  --bulma-primary-s: var(--binmap-accent-s) !important;
+  --bulma-primary-l: var(--binmap-accent-l) !important;
+}
